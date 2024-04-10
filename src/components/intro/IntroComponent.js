@@ -1,23 +1,24 @@
 import React from 'react';
 import Profile from '../../assets/my_image.jpeg';
+import User from '../../assets/user.jpg';
 
 const IntroComponent = () => {
   return (
-    <div className='justify-center flex'>
+    <div className='justify-center flex relative '>
       <div className='flex flex-row h-screen -mt-20 space-x-20'>
         <div className=' flex justify-center items-center'>
           <div className='max-w-xl space-y-5'>
             <p className='text-2xl'>Hi There, I am</p>
             <div>
-              <h1 className='text-7xl font-bold font-serif'>GHRITAK</h1>
+              <h1 className='text-7xl font-bold font-serif'>Developer</h1>
             </div>
             <p>
-              a software developer with a passion for creating exceptional
+              A software developer with a passion for creating exceptional
               digital experiences. Specializing in React Native, ReactJs and
               varoius tech stacks.
             </p>
             <div className='flex space-x-3'>
-              <div className='rounded-full px-8 py-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black transition-all duration-300'>
+              <div className='rounded-full px-8 py-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black transition-all duration-300 border-black border-[1px]'>
                 Hire Me
               </div>
               <div className='rounded-full px-8 py-2 cursor-pointer bg-white  hover:bg-black hover:text-white  transition-all duration-300 border-[1px] border-black'>
@@ -27,12 +28,16 @@ const IntroComponent = () => {
           </div>
         </div>
         <div className='flex justify-center items-center'>
-          <div className='rounded-full overflow-hidden'>
-            <img src={Profile} alt='Profile' className='rounded-full' />
+          <div className='rounded-full overflow-hidden '>
+            <img
+              src={User}
+              alt='Profile'
+              className='rounded-full w-[400px] h-[400px] '
+            />
           </div>
         </div>
       </div>
-      <div>
+      {/* <div>
         <svg
           id='blobs'
           width='100%'
@@ -47,7 +52,7 @@ const IntroComponent = () => {
             stroke='#29283D'
           ></path>
         </svg>
-      </div>
+      </div> */}
     </div>
   );
 };
