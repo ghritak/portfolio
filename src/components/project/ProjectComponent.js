@@ -1,4 +1,6 @@
 import React from 'react';
+import wanderway from '../../assets/project/wanderway.png';
+import ProjectCard from './ProjectCard';
 
 const ProjectComponent = () => {
   return (
@@ -10,7 +12,11 @@ const ProjectComponent = () => {
               Projects
             </h1>
             <div className='flex flex-row space-x-5'>
-              <div className=' text-white'></div>
+              <div className=' text-white space-y-10'>
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+              </div>
             </div>
           </div>
         </div>
