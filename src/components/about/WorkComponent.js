@@ -6,7 +6,7 @@ import { GoDotFill } from 'react-icons/go';
 
 const WorkComponent = () => {
   return (
-    <div className='mx-56 flex relative'>
+    <div className='mx-56 flex relative px-20'>
       <div className='flex flex-row h-screen space-x-20'>
         <div className=' flex justify-center items-center'>
           <div className='space-y-20'>
