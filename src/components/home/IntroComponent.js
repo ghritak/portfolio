@@ -10,7 +10,7 @@ const IntroComponent = () => {
           <div className='max-w-xl space-y-5'>
             <p className='text-2xl'>Hi There, I am</p>
             <div>
-              <h1 className='text-7xl font-bold font-serif'>Developer</h1>
+              <h1 className='text-7xl font-bold font-serif'>GHRITAK</h1>
             </div>
             <p>
               A software developer with a passion for creating exceptional
