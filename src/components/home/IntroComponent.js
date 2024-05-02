@@ -6,7 +6,7 @@ const IntroComponent = () => {
   return (
     <div className='justify-center flex relative '>
       <div className='flex flex-row h-screen -mt-20 space-x-20'>
-        <div className=' flex justify-center items-center'>
+        <div className='text-white flex justify-center items-center'>
           <div className='max-w-xl space-y-5'>
             <p className='text-2xl'>Hi There, I am</p>
             <div>
@@ -21,7 +21,7 @@ const IntroComponent = () => {
               <div className='rounded-full px-8 py-2 cursor-pointer bg-black text-white hover:bg-white hover:text-black transition-all duration-300 border-black border-[1px]'>
                 Hire Me
               </div>
-              <div className='rounded-full px-8 py-2 cursor-pointer bg-white  hover:bg-black hover:text-white  transition-all duration-300 border-[1px] border-black'>
+              <div className='rounded-full px-8 py-2 cursor-pointer bg-zinc-800  hover:bg-white hover:text-black  transition-all duration-300 border-[1.5px] border-white'>
                 Download CV
               </div>
             </div>
