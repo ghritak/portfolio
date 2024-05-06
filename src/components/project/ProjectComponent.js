@@ -1,5 +1,4 @@
 import React from 'react';
-import wanderway from '../../assets/project/wanderway.png';
 import ProjectCard from './ProjectCard';
 import { projects } from './constant';
 
@@ -10,7 +9,7 @@ const ProjectComponent = () => {
         <div className=' flex justify-center items-center'>
           <div className='space-y-20'>
             <h1 className='text-6xl font-serif font-bold text-white'>
-              Projects
+              My Projects
             </h1>
             <div className='flex flex-row space-x-5'>
               <div className=' text-white space-y-4'>
