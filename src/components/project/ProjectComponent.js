@@ -9,7 +9,7 @@ const ProjectComponent = () => {
         <div className=' flex justify-center items-center'>
           <div className='space-y-20'>
             <h1 className='text-6xl font-serif font-bold text-white'>
-              My Projects
+              Projects
             </h1>
             <div className='flex flex-row space-x-5'>
               <div className=' text-white space-y-4'>
