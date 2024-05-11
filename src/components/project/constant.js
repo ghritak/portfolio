@@ -11,7 +11,7 @@ export const projects = [
     name: 'Linkverse - A linktree like app ',
     stack: ['Next Js', 'Tailwind CSS', 'Node Js', 'Express Js', 'MongoDb'],
     img: require('../../assets/project/linkverse.png'),
-    link: 'https://linkversee.netlify.app/ghritak',
+    link: 'https://linkversee.vercel.app/ghritak',
     description:
       'Developed a website for creating personalized landing pages using Next Js and Tailwind CSS. Backend implementation built using Node.js and Express.js to handle API integrations, and MongoDB Atlas for storing user data. Implemented JWT based authentication and encryption for enhanced security.',
   },

@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from '../../assets/my_image.jpeg';
+// import Profile from '../../assets/my_image.jpeg';
 import User from '../../assets/user.jpg';
 
 const IntroComponent = () => {
