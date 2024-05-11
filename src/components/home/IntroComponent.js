@@ -10,7 +10,12 @@ const IntroComponent = () => {
           <div className='max-w-xl space-y-5'>
             <p className='text-2xl'>Hi There, I am</p>
             <div>
-              <h1 className='text-7xl font-bold font-serif'>GHRITAK</h1>
+              <h1
+                data-aos='fade-right'
+                className='text-7xl font-bold font-serif'
+              >
+                GHRITAK
+              </h1>
             </div>
             <p>
               A software developer with a passion for creating exceptional
@@ -27,8 +32,8 @@ const IntroComponent = () => {
             </div>
           </div>
         </div>
-        <div className='flex justify-center items-center'>
-          <div className='rounded-full overflow-hidden '>
+        <div data-aos='zoom-in' className='flex justify-center items-center'>
+          <div className='rounded-full overflow-hidden hover:scale-105 transition-all duration-300'>
             <img
               src={User}
               alt='Profile'
