@@ -5,8 +5,8 @@ import WorkComponent from './WorkComponent';
 const AboutComponent = () => {
   return (
     <div>
-      <EducationComponent />
       <WorkComponent />
+      <EducationComponent />
     </div>
   );
 };
