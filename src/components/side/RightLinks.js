@@ -12,7 +12,6 @@ const RightLinks = () => {
         <div className='p-4 bg-black shadow-md rounded-full m-3 cursor-pointer hover:scale-125 transition-all duration-300'>
           <FaLinkedinIn size={22} color='white' />
         </div>
-        <div></div>
       </a>
       <a href={links.github} target='blank'>
         <div className='p-4 bg-white shadow-md rounded-full m-3 cursor-pointer hover:scale-125 transition-all duration-300'>
