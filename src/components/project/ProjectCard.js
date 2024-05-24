@@ -25,8 +25,11 @@ const ProjectCard = ({ item, index }) => {
         <div className='space-y-3'>
           <h1 className='font-bold text-3xl'>{item?.name}</h1>
           <div className='flex flex-row items-center'>
-            {item?.stack.map((stack) => (
-              <div className='bg-zinc-600 px-2 py-1 mr-2 rounded-md'>
+            {item?.stack.map((stack, index) => (
+              <div
+                key={index}
+                className='bg-zinc-600 px-2 py-1 mr-2 rounded-md'
+              >
                 <p>{stack}</p>
               </div>
             ))}

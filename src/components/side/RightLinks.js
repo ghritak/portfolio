@@ -4,9 +4,9 @@ import { links } from './constants';
 const RightLinks = () => {
   return (
     <div className='fixed h-screen justify-end items-center flex flex-col bottom-0 right-20 z-20'>
-      {links.map((item) => {
+      {links.map((item, id) => {
         return (
-          <a href={item.url} target='blank'>
+          <a key={id} href={item.url} target='blank'>
             <div
               className={`p-4 bg-${item.background} shadow-md rounded-full m-3 cursor-pointer hover:scale-125 transition-all duration-300`}
             >

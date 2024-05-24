@@ -14,7 +14,7 @@ const ProjectComponent = () => {
             <div className='flex flex-row space-x-5'>
               <div className=' text-white space-y-4'>
                 {projects.map((item, index) => (
-                  <ProjectCard item={item} index={index} />
+                  <ProjectCard key={index} item={item} index={index} />
                 ))}
               </div>
             </div>

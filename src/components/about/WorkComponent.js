@@ -26,8 +26,8 @@ const WorkComponent = () => {
                       year={'Oct 2023 - Apr 2024'}
                     />
                     <div className='space-y-1'>
-                      {work[0].map((item) => (
-                        <div className='flex flex-row items-start'>
+                      {work[0].map((item, index) => (
+                        <div key={index} className='flex flex-row items-start'>
                           <div className='mt-1 mr-1'>
                             <GoDotFill color='white' size={20} />
                           </div>
@@ -49,8 +49,8 @@ const WorkComponent = () => {
                       year={'Sep 2023 - Nov 2023'}
                     />
                     <div className='space-y-1'>
-                      {work[1].map((item) => (
-                        <div className='flex flex-row items-start'>
+                      {work[1].map((item, index) => (
+                        <div key={index} className='flex flex-row items-start'>
                           <div className='mt-1 mr-1'>
                             <GoDotFill color='white' size={20} />
                           </div>
@@ -69,8 +69,8 @@ const WorkComponent = () => {
                     </h1>
                     <OrgLine name={'AID24x7'} year={'Feb 2023 - Aug 2023'} />
                     <div className='space-y-1'>
-                      {work[2].map((item) => (
-                        <div className='flex flex-row items-start'>
+                      {work[2].map((item, index) => (
+                        <div key={index} className='flex flex-row items-start'>
                           <div className='mt-1 mr-1'>
                             <GoDotFill color='white' size={20} />
                           </div>
