@@ -8,6 +8,7 @@ import LeftIndices from './components/side/LeftIndices';
 import RightLinks from './components/side/RightLinks';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ContactComponent from './components/contact/ContactComponent';
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
       <IntroComponent />
       <AboutComponent />
       <ProjectComponent />
+      <ContactComponent />
     </div>
   );
 };
