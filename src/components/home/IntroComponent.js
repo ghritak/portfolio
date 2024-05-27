@@ -4,7 +4,7 @@ import User from '../../assets/user.jpg';
 
 const IntroComponent = () => {
   return (
-    <div className='justify-center flex relative '>
+    <section className='justify-center flex relative '>
       <div className='flex flex-row h-screen -mt-20 space-x-20'>
         <div className='text-white flex justify-center items-center'>
           <div className='max-w-xl space-y-5'>
@@ -58,7 +58,7 @@ const IntroComponent = () => {
           ></path>
         </svg>
       </div> */}
-    </div>
+    </section>
   );
 };
 

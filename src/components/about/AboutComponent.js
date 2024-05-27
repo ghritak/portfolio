@@ -4,10 +4,10 @@ import WorkComponent from './WorkComponent';
 
 const AboutComponent = () => {
   return (
-    <div>
+    <section>
       <WorkComponent />
       <EducationComponent />
-    </div>
+    </section>
   );
 };
 

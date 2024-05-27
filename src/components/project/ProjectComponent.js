@@ -4,7 +4,7 @@ import { projects } from './constant';
 
 const ProjectComponent = () => {
   return (
-    <div className='mx-56 flex relative px-20'>
+    <section className='mx-56 flex relative px-20'>
       <div className='flex flex-row min-h-screen space-x-20'>
         <div className=' flex justify-center items-center'>
           <div className='space-y-20'>
@@ -21,7 +21,7 @@ const ProjectComponent = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
