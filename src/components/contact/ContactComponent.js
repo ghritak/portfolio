@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ContactComponent = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleChangeInput = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    console.log(value);
+  };
+
   return (
     <section className='mx-56 flex relative px-20'>
       <div className='flex flex-row min-h-screen space-x-20'>
@@ -10,7 +22,16 @@ const ContactComponent = () => {
               Contact
             </h1>
             <div className='flex flex-row space-x-5'>
-              <div className=' text-white space-y-4'></div>
+              <div className=' text-white space-y-4'>
+                <form>
+                  <input
+                    name='name'
+                    className='bg-black'
+                    value={formData.name}
+                    onChange={handleChangeInput}
+                  />
+                </form>
+              </div>
             </div>
           </div>
         </div>
