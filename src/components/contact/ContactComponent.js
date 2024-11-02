@@ -10,7 +10,6 @@ const ContactComponent = () => {
   const handleChangeInput = (event) => {
     const { name, value } = event.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    console.log(value);
   };
 
   return (

@@ -12,7 +12,6 @@ export const getPosition = (id) => {
     const yPosition = rect.top + window.scrollY; // Calculate Y position relative to the document
     return yPosition;
   } else {
-    console.log(`Element with ID ${id} not found.`);
     return null;
   }
 };
