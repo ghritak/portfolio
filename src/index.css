@@ -17,3 +17,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.scroll-container > div {
+	height: 100vh; /* Ensure each section takes the full viewport height */
+	display: flex; /* To center content if needed */
+	align-items: center; /* Center content vertically */
+	justify-content: center; /* Center content horizontally */
+  }
+  

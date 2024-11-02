@@ -4,7 +4,7 @@ import WorkComponent from './WorkComponent';
 
 const AboutComponent = () => {
   return (
-    <section>
+    <section id='about'>
       <WorkComponent />
       <EducationComponent />
     </section>

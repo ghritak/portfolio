@@ -11,7 +11,7 @@ export const projects = [
     name: 'Linkverse - A linktree like app ',
     stack: ['Next Js', 'Tailwind CSS', 'Node Js', 'Express Js', 'MongoDb'],
     img: require('../../assets/project/linkverse.png'),
-    link: 'https://linkversee.vercel.app/ghritak',
+    link: 'https://linkversee.netlify.app',
     description:
       'Developed a website for creating personalized landing pages using Next Js and Tailwind CSS. Backend implementation built using Node.js and Express.js to handle API integrations, and MongoDB Atlas for storing user data. Implemented JWT based authentication and encryption for enhanced security.',
   },
@@ -19,7 +19,7 @@ export const projects = [
     name: 'CineCrate – Streaming Platform',
     stack: ['React Js', 'Tailwind CSS', 'OMDb API'],
     img: require('../../assets/project/cinecrate.png'),
-    link: 'https://cinecrate.netlify.app/',
+    link: 'https://cinecrate.netlify.app',
     description:
       'Developed a responsive frontend movie streaming web application using React.js, allowing users to browse, bookmark and watch a wide range of movies and Tv series. Implemented features such as search functionality, and dynamic content loading to enhance user experience.',
   },

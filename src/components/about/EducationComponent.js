@@ -4,7 +4,7 @@ import OrgLine from './OrgLine';
 
 const EducationComponent = () => {
   return (
-    <div className='mx-56 flex relative px-20'>
+    <div className='mx-56 flex relative px-20 py-28'>
       <div className='flex flex-row min-h-screen space-x-20'>
         <div className=' flex justify-center items-center'>
           <div className='space-y-20'>

@@ -14,8 +14,11 @@ const ContactComponent = () => {
   };
 
   return (
-    <section className='mx-56 flex relative px-20'>
-      <div className='flex flex-row min-h-screen space-x-20'>
+    <section
+      className='mx-56 flex relative min-h-screen px-20 py-28'
+      id='contact'
+    >
+      <div className='flex flex-row space-x-20'>
         <div className=' flex justify-center items-center'>
           <div className='space-y-20'>
             <h1 className='text-6xl font-serif font-bold text-white'>
