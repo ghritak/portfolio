@@ -2,35 +2,32 @@ import React from 'react';
 
 const ProjectCard = ({ item, index }) => {
   const handleClick = () => {
-    window.open(item?.link, '_blank');
+    // window.open(item?.link, '_blank');
   };
 
   return (
     <div data-aos='fade-up'>
       <div
         onClick={handleClick}
-        className={`flex ${
+        className={`md:flex ${
           index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-        } cursor-pointer hover:scale-110 transition-all duration-300 hover:bg-zinc-700 p-6 rounded-lg`}
+        } cursor-pointer md:hover:scale-105 transition-all duration-300 hover:bg-zinc-700 space-y-2 md:space-y-0 p-3 md:p-6 rounded-lg`}
       >
-        <div className={`${index % 2 === 0 ? 'mr-10' : 'ml-10'}`}>
+        <div className={`${index % 2 === 0 ? 'md:mr-10' : 'md:ml-10'}`}>
           {item?.img && (
             <img
               src={item?.img}
               alt='wander way'
-              className='w-60 h-44 rounded-md'
+              className='md:h-44 w-full md:w-[300px] rounded-md'
             />
           )}
         </div>
         <div className='space-y-3'>
-          <h1 className='font-bold text-3xl'>{item?.name}</h1>
-          <div className='flex flex-row items-center'>
+          <h1 className='font-bold text-xl md:text-3xl'>{item?.name}</h1>
+          <div className='flex flex-wrap flex-row gap-2 items-center'>
             {item?.stack.map((stack, index) => (
-              <div
-                key={index}
-                className='bg-zinc-600 px-2 py-1 mr-2 rounded-md'
-              >
-                <p>{stack}</p>
+              <div key={index} className='bg-zinc-600 px-2 py-1 rounded-md'>
+                <p className='text-sm'>{stack}</p>
               </div>
             ))}
           </div>

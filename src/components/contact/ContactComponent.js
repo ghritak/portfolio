@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Input from '../ui/Input';
 import TextArea from '../ui/TextArea';
+import Header from '../ui/Header';
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
@@ -23,15 +24,15 @@ const ContactComponent = () => {
   return (
     <section
       id='contact'
-      className='mx-56 flex relative min-h-screen px-20 py-28'
+      className='md:mx-56 flex relative min-h-screen px-6 md:px-20 md:py-28'
     >
-      <div className='flex flex-col space-y-20 items-center justify-center w-full text-white'>
-        <h1 className='text-6xl font-serif font-bold'>Contact</h1>
+      <div className='flex flex-col space-y-10 md:space-y-20 items-center justify-center w-full text-white'>
+        <Header title='Contact' />
         <form
-          className='flex flex-col max-w-3xl w-full gap-6'
+          className='flex flex-col max-w-3xl w-full gap-3 md:gap-6'
           onSubmit={handleSubmit}
         >
-          <div className='flex gap-6'>
+          <div className='flex flex-col md:flex-row- gap-3 md:gap-6'>
             <Input
               placeholder='Name'
               name='name'

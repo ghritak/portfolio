@@ -1,19 +1,22 @@
 import React from 'react';
 import { education } from '../constants/education';
 import EducationCard from './EducationCard';
+import Header from '../ui/Header';
 
 const EducationComponent = () => {
   return (
-    <div className='mx-56 flex relative px-20'>
+    <div className='md:mx-56 flex relative md:px-20 px-6'>
       <div className='flex flex-row min-h-screen space-x-20'>
         <div className=' flex justify-center items-center'>
-          <div className='space-y-20'>
-            <h1 className='text-6xl font-serif font-bold text-white'>
-              Education
-            </h1>
+          <div className='space-y-10 md:space-y-20'>
+            <Header title='Education' />
             <div className='text-white'>
               {education.map((item, index) => (
-                <EducationCard item={item} key={index} />
+                <EducationCard
+                  key={index}
+                  item={item}
+                  isLine={index !== education.length - 1}
+                />
               ))}
             </div>
           </div>

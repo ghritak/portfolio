@@ -3,7 +3,7 @@ import { links } from './constants';
 
 const RightLinks = () => {
   return (
-    <div className='fixed h-screen justify-end items-center flex flex-col bottom-0 right-20 z-20'>
+    <div className='fixed h-screen justify-end items-center hidden md:flex flex-col bottom-0 right-20 z-20'>
       {links.map((item, id) => {
         return (
           <a key={id} href={item.url} target='blank'>

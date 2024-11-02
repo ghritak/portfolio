@@ -32,7 +32,7 @@ const LeftIndices = () => {
   }, []);
 
   return (
-    <div className='fixed h-screen text-white justify-center items-center flex flex-col bottom-0 left-20 z-20'>
+    <div className='fixed h-screen text-white justify-center items-center hidden md:flex flex-col bottom-0 left-20 z-20'>
       <div className='-rotate-90 pl-2'>{currentIndex}</div>
       <div
         className='w-[2px] bg-zinc-600 rounded-lg items-end flex'

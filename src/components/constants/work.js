@@ -1,6 +1,6 @@
 export const work = [
   {
-    role: 'Associate Software Developement Engineer',
+    role: 'Associate SDE',
     company: 'Cloudify Solutions Pvt Ltd.',
     period: 'Jun 2024 - Present',
     description: [
