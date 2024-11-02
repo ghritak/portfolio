@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { projects } from './constant';
+import { projects } from '../constants/projects';
 
 const ProjectComponent = () => {
   return (

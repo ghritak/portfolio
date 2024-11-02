@@ -9,7 +9,6 @@ import MainComponent from './components/home/MainComponent';
 const App = () => {
   useEffect(() => {
     AOS.init();
-    AOS.refresh();
   }, []);
 
   return (
