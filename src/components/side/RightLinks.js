@@ -20,7 +20,7 @@ const RightLinks = () => {
         })}
         <div className='w-[2px] bg-gray-300 rounded-lg h-1/3 mt-4' />
       </div>
-      <div className='fixed h-2/3 xl:hidden flex-col justify-center top-4 right-6 z-20'>
+      <div className='fixed h-2/3 xl:hidden flex-col justify-center top-4 right-6'>
         <div
           onClick={() => setOpen(!open)}
           className={`p-3 bg-zinc-600 shadow-md rounded-full m-2 cursor-pointer focus:bg-red-300 transition-all duration-300`}
