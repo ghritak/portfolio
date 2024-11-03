@@ -3,23 +3,34 @@ import Input from '../ui/Input';
 import TextArea from '../ui/TextArea';
 import Header from '../ui/Header';
 import { IoMdSend } from 'react-icons/io';
+import { supabase } from '../../supabaseConfig';
+
+const initData = {
+  name: '',
+  phone: '',
+  email: '',
+  message: '',
+};
 
 const ContactComponent = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState(initData);
 
   const handleChangeInput = (event) => {
     const { name, value } = event.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(formData);
+    const { error } = await supabase.from('contact').insert(formData);
+
+    if (error) {
+      console.log('Error:', error);
+    } else {
+      console.log('Form submitted succesfully.');
+      setFormData(initData);
+    }
   };
 
   return (
@@ -37,11 +48,13 @@ const ContactComponent = () => {
             <Input
               placeholder='Name'
               name='name'
+              value={formData.name}
               onChange={handleChangeInput}
             />
             <Input
               placeholder='Phone'
               name='phone'
+              value={formData.phone}
               onChange={handleChangeInput}
             />
           </div>
@@ -49,11 +62,13 @@ const ContactComponent = () => {
             placeholder='Email'
             name='email'
             type='email'
+            value={formData.email}
             onChange={handleChangeInput}
           />
           <TextArea
             placeholder='Type your message...'
             name='message'
+            value={formData.message}
             onChange={handleChangeInput}
           />
           <button

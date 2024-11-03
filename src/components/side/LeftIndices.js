@@ -29,7 +29,6 @@ const LeftIndices = () => {
   useEffect(() => {
     const positions = sections.map((id) => getPosition(id));
     setSectionHeights(positions);
-    console.log(positions);
   }, []);
 
   return (
