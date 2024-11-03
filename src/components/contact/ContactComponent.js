@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Input from '../ui/Input';
 import TextArea from '../ui/TextArea';
 import Header from '../ui/Header';
+import { IoMdSend } from 'react-icons/io';
 
 const ContactComponent = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +33,7 @@ const ContactComponent = () => {
           className='flex flex-col max-w-3xl w-full gap-3 md:gap-6'
           onSubmit={handleSubmit}
         >
-          <div className='flex flex-col md:flex-row- gap-3 md:gap-6'>
+          <div className='flex flex-col md:flex-row gap-3 md:gap-6'>
             <Input
               placeholder='Name'
               name='name'
@@ -59,8 +60,11 @@ const ContactComponent = () => {
             type='submit'
             className='p-3 rounded-lg bg-white hover:bg-gray-300 text-black transition-all duration-300'
           >
-            Submit
-          </button>{' '}
+            <span className='flex justify-center items-center gap-1'>
+              Send
+              <IoMdSend />
+            </span>
+          </button>
         </form>
       </div>
     </section>

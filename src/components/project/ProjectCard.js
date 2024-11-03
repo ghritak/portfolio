@@ -14,13 +14,11 @@ const ProjectCard = ({ item, index }) => {
         } cursor-pointer md:hover:scale-105 transition-all duration-300 hover:bg-zinc-700 space-y-2 md:space-y-0 p-3 md:p-6 rounded-lg`}
       >
         <div className={`${index % 2 === 0 ? 'md:mr-10' : 'md:ml-10'}`}>
-          {item?.img && (
-            <img
-              src={item?.img}
-              alt='wander way'
-              className='md:h-44 w-full md:w-[300px] rounded-md'
-            />
-          )}
+          <img
+            src={item?.img}
+            alt='wander way'
+            className='md:h-44 w-full object-contain rounded-md'
+          />
         </div>
         <div className='space-y-3'>
           <h1 className='font-bold text-xl md:text-3xl'>{item?.name}</h1>
