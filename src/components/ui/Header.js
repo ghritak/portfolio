@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ title }) => {
   return (
-    <h1 className='text-3xl md:text-6xl font-serif font-bold text-white'>
+    <h1 className='text-3xl xl:text-6xl font-serif font-bold text-white'>
       {title}
     </h1>
   );

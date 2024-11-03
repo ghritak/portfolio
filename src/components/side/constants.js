@@ -31,3 +31,31 @@ export const links = [
     background: 'white',
   },
 ];
+
+export const mobileLinks = [
+  {
+    url: 'https://www.linkedin.com/in/ghritak-jyoti-kalita-a1915415a/',
+    icon: <FaLinkedinIn size={18} color='white' />,
+    background: 'black',
+  },
+  {
+    url: 'https://github.com/ghritak',
+    icon: <PiGithubLogoFill size={18} />,
+    background: 'white',
+  },
+  {
+    url: 'https://leetcode.com/ghritak',
+    icon: <SiLeetcode size={18} />,
+    background: 'white',
+  },
+  {
+    url: 'https://instagram.com/ghritak_',
+    icon: <FaInstagram size={18} />,
+    background: 'white',
+  },
+  {
+    url: 'https://www.facebook.com/ghritak?mibextid=LQQJ4d',
+    icon: <FaFacebookF size={18} />,
+    background: 'white',
+  },
+];

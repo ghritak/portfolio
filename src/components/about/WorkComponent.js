@@ -5,10 +5,10 @@ import Header from '../ui/Header';
 
 const WorkComponent = () => {
   return (
-    <div className='md:mx-56 flex relative md:px-20 px-6 md:py-28'>
-      <div className='flex flex-row min-h-screen md:space-x-20'>
+    <div className='xl:mx-56 flex relative xl:px-20 px-6 xl:py-28'>
+      <div className='flex flex-row min-h-screen xl:space-x-20'>
         <div className=' flex justify-center items-center'>
-          <div className='space-y-10 md:space-y-20'>
+          <div className='space-y-10 xl:space-y-20'>
             <Header title={'Work History'} />
             <div className='flex flex-row space-x-5'>
               <div className='text-white'>
