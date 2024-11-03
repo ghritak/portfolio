@@ -3,17 +3,17 @@ import IntroComponent from './IntroComponent';
 import AboutComponent from '../about/AboutComponent';
 import ProjectComponent from '../project/ProjectComponent';
 import ContactComponent from '../contact/ContactComponent';
+import CopyRight from './CopyRight';
 
 const MainComponent = () => {
   return (
-    <div className='bg-zinc-800'>
-      <div className='scroll-container'>
-        <IntroComponent />
-        <AboutComponent />
-        <ProjectComponent />
-        <ContactComponent />
-      </div>
-    </div>
+    <>
+      <IntroComponent />
+      <AboutComponent />
+      <ProjectComponent />
+      <ContactComponent />
+      <CopyRight />
+    </>
   );
 };
 
